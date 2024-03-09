@@ -58,11 +58,12 @@ nav.navbar.scrolled{
     background-color: #4cacc9;
 }
 
-nav.navbar a.navbar-branc{
+nav.navbar a.navbar-branch{
     width: 9%;
 }
 
-nav.navbar .navbar-nav .nav-link.navbar-link{
+nav.navbar .navbar-nav .nav-link.navbar-link,
+nav.navbar .navbar-nav .dropdown-toggle{
     font-weight: 400;
     color: #252161 !important;
     letter-spacing: 0.8px;
@@ -205,4 +206,48 @@ button{
 button:hover{
     color: #252161 !important;
     background-color: #f7931d !important;
+}
+
+
+
+/* navbar drop down */
+.navbar-nav .dropdown-menu {
+    background-color: #4cacc9; /* Background color */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+    border-radius: 0; /* Remove border-radius */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    font-weight: 400;
+    color: #252161; /* Text color */
+    font-size: 10px; /* Font size */
+    letter-spacing: 0.8px; /* Letter spacing */
+    opacity: 0.75;
+    transition: opacity 0.3s ease-in-out; /* Transition */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-nav .dropdown-menu .dropdown-item.active {
+    opacity: 1; /* Hover opacity */
+    background-color: #6dccdc; /* Hover background color */
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem; /* Padding */
+    clear: both;
+    font-weight: 400;
+    color: #252161; /* Text color */
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent; /* Background color */
+    border: 0; /* Remove border */
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #252161; /* Hover text color */
+    text-decoration: none; /* Remove underline */
+    background-color: #6dccdc; /* Hover background color */
 }
