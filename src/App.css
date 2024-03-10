@@ -136,7 +136,7 @@ span.navbar-text{
     width: 0%;
     height: 100%;
     position: absolute;
-    background-color: #6dccdc;
+    background-color: transparent;
     left: 0;
     top: 0;
     z-index: -1;
@@ -217,6 +217,11 @@ button:hover{
 
 
 /* navbar drop down */
+.navbar-collapse {
+    overflow-x: hidden; /* Remove side scrollbar */
+    background-color: transparent; /* Set background color */
+}
+
 .navbar-nav .dropdown-menu {
     background-color: #4cacc9 !important; /* Background color */
     border: none; /* Remove border */
@@ -351,4 +356,11 @@ button:hover{
 
 .txt-rotate > .wrap{
     border-right: 0.08em solid aliceblue;
+}
+
+
+/* trending */
+.trending{
+    padding: 0 0 50px 0;
+    position: relative;
 }
