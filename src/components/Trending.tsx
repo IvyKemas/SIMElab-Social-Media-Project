@@ -3,7 +3,6 @@ import meter1 from "../assets/images/carousel-1.jpg";
 import meter2 from "../assets/images/carousel-2.png";
 import meter3 from "../assets/images/carousel-3.png";
 import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
-import { PiSelectionBackground } from "react-icons/pi";
 
 function Trending() {
   return (
