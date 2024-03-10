@@ -363,4 +363,65 @@ button:hover{
 .trending{
     padding: 0 0 50px 0;
     position: relative;
+    background-color: #4cacc9;
+    border-radius: 35px;
+    margin: -45px 10px 0 10px;
+    width: auto;
+    min-width: 95vw;
+    height: auto;
+    min-height: 100vh;
 }
+
+.trending .trending-head h2{
+    text-align: center;
+    font-weight: 700;
+    padding-top: 20px;
+    font-size: 45px;
+}
+
+.trending p{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+
+.trending .row{
+    height: 400px;
+}
+
+.trending .row h5{
+    text-align: start;
+    font-weight: 700;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.trending .row p{
+    text-align: start;
+    font-weight: 400;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.trending .row img{
+    height: 300px;
+    margin-right: 0;
+}
+
+.trending .carousel-item {
+    position: relative;
+  }
+
+
+.trending .carousel-item .btn {
+    position: absolute;
+    font-size: 25px;
+    border-radius: 20px;
+    color: #17153c !important;
+    bottom: 10px;
+    width: 200px;
+    height: 50px;
+    right: 150px;
+  }

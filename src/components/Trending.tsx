@@ -1,74 +1,121 @@
-import { Col, Container, Row } from "react-bootstrap";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import { Col, Container, Row, Carousel } from "react-bootstrap";
 import meter1 from "../assets/images/carousel-1.jpg";
 import meter2 from "../assets/images/carousel-2.png";
 import meter3 from "../assets/images/carousel-3.png";
+import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
+import { PiSelectionBackground } from "react-icons/pi";
 
 function Trending() {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
   return (
     <>
-      <section className="trending" id="trending">
-        <Container>
-          <Row>
-            <Col>
-              <div className="trending-bx">
-                <h2>Trending News</h2>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-                  iste voluptates possimus autem tempora sapiente voluptatum
-                  adipisci, nostrum voluptas, tenetur ullam quidem
-                  exercitationem praesentium officia, cumque reiciendis error
-                  quibusdam laborum.
-                </p>
-                <Carousel
-                  responsive={responsive}
-                  infinite={true}
-                  className="trending-slider"
-                >
-                  {/* the items of the carousel */}
-                  <div className="item">
-                    <img src={meter1} alt="image" />
-                    <h5>News Title</h5>
-                    <p>News Description</p>
-                  </div>
-                  {/* the second item */}
-                  <div className="item">
-                    <img src={meter2} alt="image" />
-                    <h5>Next News Title</h5>
-                    <p>News 2 Description</p>
-                  </div>
-                  {/* the third item */}
-                  <div className="item">
-                    <img src={meter3} alt="image" />
-                    <h5>Last Title</h5>
-                    <p>News 3 Description</p>
-                  </div>
-                </Carousel>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <Container className="trending" id="trending">
+        <div className="trending-head">
+          <h2>Trending News</h2>
+          <p>
+            "Stay ahead of the social media game with today's trending news,
+            shaping your online presence one headline at a time."
+          </p>
+        </div>
+        <Carousel
+          indicators={false}
+          prevIcon={
+            <BsFillCaretLeftFill
+              style={{ color: "#f7931d", fontSize: "40px" }}
+            />
+          }
+          nextIcon={
+            <BsFillCaretRightFill
+              style={{ color: "#f7931d", fontSize: "40px" }}
+            />
+          }
+          className="trending-item"
+        >
+          <Carousel.Item>
+            <div className="container text-start">
+              <Row className="row align-items-center">
+                <Col className="col-4 col-md-4">
+                  <img
+                    src={meter1}
+                    alt="trees"
+                    className="img-rounded img-fluid"
+                  />
+                </Col>
+                <Col className="col-6 col-mg-6">
+                  <h5>This is a Title</h5>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged.
+                  </p>
+                  <button type="button" className="btn btn-outline-warning">
+                    Read More
+                  </button>
+                </Col>
+              </Row>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="container text-start">
+              <Row className="row align-items-center">
+                <Col className="col-4 col-md-4">
+                  <img
+                    src={meter2}
+                    alt="trees"
+                    className="img-rounded img-fluid"
+                  />
+                </Col>
+                <Col className="col-6 col-mg-6">
+                  <h5>This is a Title</h5>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged.
+                  </p>
+                  <button type="button" className="btn btn-outline-warning">
+                    Read More
+                  </button>
+                </Col>
+              </Row>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="container text-start">
+              <Row className="row align-items-center">
+                <Col className="col-4 col-md-4">
+                  <img
+                    src={meter3}
+                    alt="trees"
+                    className="img-rounded img-fluid"
+                  />
+                </Col>
+                <Col className="col-6 col-mg-6">
+                  <h5>This is a Title</h5>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged.
+                  </p>
+                  <button type="button" className="btn btn-outline-warning">
+                    Read More
+                  </button>
+                </Col>
+              </Row>
+            </div>
+          </Carousel.Item>
+        </Carousel>
+      </Container>
     </>
   );
 }
