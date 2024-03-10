@@ -66,14 +66,35 @@ function CustomNavbar() {
             >
               Trending
             </Nav.Link>
-            <NavDropdown title="Entertainment" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#music">Music</NavDropdown.Item>
-              <NavDropdown.Item href="#celebrities">
-                Celebrities
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#politics">Politics</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link
+              href="#trending"
+              className={
+                activeLink === "music" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("music")}
+            >
+              Music
+            </Nav.Link>
+            <Nav.Link
+              href="#celebrities"
+              className={
+                activeLink === "celebrities"
+                  ? "active navbar-link"
+                  : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("celebrities")}
+            >
+              Celebrities
+            </Nav.Link>
+            <Nav.Link
+              href="#politics"
+              className={
+                activeLink === "politics" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("politics")}
+            >
+              Politics
+            </Nav.Link>
           </Nav>
           <Form className="d-flex">
             <FormControl
