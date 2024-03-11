@@ -99,7 +99,7 @@ interface Topic {
 }
 function generateCard({ id, title, description, link, imageUrl }: Topic) {
   return (
-    <div key={id} className="row">
+    <div key={id} className="topics row">
       {id === 2 ? (
         <>
           <div className="col-7 col-md-6">
@@ -133,7 +133,7 @@ function generateCard({ id, title, description, link, imageUrl }: Topic) {
 
 //
 
-function Music() {
+function Topics() {
   const cards = [
     ...topics.music.map((topic) => ({ ...topic, imageUrl: musicImg })),
     ...topics.Celebrities.map((topic) => ({ ...topic, imageUrl: celebImg })),
@@ -148,4 +148,4 @@ function Music() {
     </>
   );
 }
-export default Music;
+export default Topics;
