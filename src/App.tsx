@@ -1,9 +1,9 @@
 import "./App.css";
 import Banner from "./components/Banner";
-// import Topics from "./components/Topics";
+import Topics from "./components/Topics";
 import Navbar from "./components/Navbar";
 import Trending from "./components/Trending";
-import Test from "./components/Test";
+// import Test from "./components/Test";
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <Banner />
       <Trending />
-      {/* <Topics /> */}
-      <Test />
+      <Topics />
+      {/* <Test /> */}
     </>
   );
 }

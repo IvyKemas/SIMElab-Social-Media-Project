@@ -67,7 +67,7 @@ function CustomNavbar() {
               Trending
             </Nav.Link>
             <Nav.Link
-              href="#trending"
+              href="#music"
               className={
                 activeLink === "music" ? "active navbar-link" : "navbar-link"
               }

@@ -425,3 +425,54 @@ button:hover{
     height: 50px;
     right: 150px;
   }
+
+
+/* topics */
+.topic{
+    margin: 10px 25% 15px 25%;
+    /* margin-bottom: 15px; */
+    display: flex;
+    align-items: center;
+}
+
+.topic button{
+    margin-left: 15px;
+    font-weight: 400;
+    height: 60px;
+    width: 200px;
+    display: block;
+    align-items: flex-end;
+    background-color: #fac487;
+    border: 1px solid #f7931d;
+    color: #252161 !important;
+}
+
+.topic button:hover{
+    background-color: #383477 !important;
+    border: 1px solid #383477 !important;
+    color: #f7931d !important;
+}
+
+.topics .content{
+    margin: 0 10px 15px 25px !important;
+    background-color: #6dccdc;
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #4cacc9 ;
+    box-shadow: 10px 6px #4cacc9;
+    width: 95% !important;
+}
+
+.topics .col-3{
+    margin-left: 0 !important;
+}
+
+.topics img{
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    border: none;
+    border-radius: 1px;
+}
